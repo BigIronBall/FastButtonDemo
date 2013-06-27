@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Fast Button Demo</title>
+        <script src="google.fastbutton.js"></script>
+        <style>
+            button {
+                margin: 50px 10px;
+                width: 90%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <button id="fastbutton" onclick="alert('FastButton')">Fast Button</>
+        <script>
+            new FastButton(document.getElementById('fastbutton'), function() {
+                       alert('Fast');
+            })
+        </script>
+        <button onclick="alert('Noraml')">Noraml Button</button>
+    </body>
+</html>
